@@ -76,6 +76,7 @@ if (MACOS OR LINUX)
               led_keyboard.c
               led_mouse.c
               led_mousepad.c
+              led_wireless.c
               main.c
               notify.c
               profile.c
