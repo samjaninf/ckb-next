@@ -809,7 +809,9 @@ static QHash<QString, Key> getMap(KeyMap::Model model, KeyMap::Layout layout){
         map["rightbar11"] = {nullptr, "Right Light Bar 11", "rightbar11", 292, 88, 6, 9, true, false};
 
         map["profswitch"] = {nullptr,  "Profile Switch", "profswitch", 20, 10, 11, 9, true, true};
+        map["ctrlwheelccw"] = {nullptr, "Control Wheel Counterclockwise", "ctrlwheelccw", 28, 10, 6, 16, false, true };
         map["ctrlwheelb"] = {nullptr, "Control Wheel Button", "ctrlwheelb", 35, 10, 11, 11, true, true };
+        map["ctrlwheelcw"] = {nullptr, "Control Wheel Clockwise", "ctrlwheelcw", 42, 10, 6, 16, false, true };
         map["lock"] = {nullptr, "Lock", "lock", 50, 10, 11, 9, true, true};
 
         map["mute"].height = map["profswitch"].height;
