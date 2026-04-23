@@ -86,6 +86,12 @@ QString KeyAction::defaultAction(const QString& key, KeyMap::Model model){
     if(key == "profdn")
         return "$mode:-4";
 
+    // In lieu of better use: Control dial maps to Volume control by default.
+    if(key == "ctrlwheelcw")
+        return "volup";
+    if(key == "ctrlwheelccw")
+        return "voldn";
+
 #ifdef Q_OS_MACOS
     // macOS has no forwards and backwards, so we bind them to macros that simulate that action
     if(key == "mouse4")
